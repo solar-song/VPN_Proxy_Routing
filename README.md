@@ -4,14 +4,14 @@
 how to use:
 in terminal type `proxy_on` will result in
 ```bash
-solarsong@MonHonRise:~$ proxy_on  
+
 [✔] Terminal proxy routing enabled (127.0.0.1:7897)
 ```
 
 
 type `proxy_status` will result in 
 ```bash
-solarsong@MonHonRise:~$ proxy_status  
+
 Current Proxy Configuration:  
 ----------------------------  
 http_proxy  = http://127.0.0.1:7897  
