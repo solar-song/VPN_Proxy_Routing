@@ -56,6 +56,11 @@ proxy_status() {
     echo "http_proxy  = $http_proxy"
     echo "https_proxy = $https_proxy"
     echo "all_proxy   = $all_proxy"
+    if alias sudo &>/dev/null; then
+        echo "sudo alias  = active (sudo -E)"
+    else
+        echo "sudo alias  = inactive"
+    fi
 }
 EOF
 
