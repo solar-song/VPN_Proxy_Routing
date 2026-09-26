@@ -39,12 +39,14 @@ proxy_on() {
     export HTTPS_PROXY="http://127.0.0.1:7897"
     export all_proxy="socks5h://127.0.0.1:7897"
     export ALL_PROXY="socks5h://127.0.0.1:7897"
-    echo -e "\e[1;32m[✔] Terminal proxy routing enabled (127.0.0.1:7897)\e[0m"
+    alias sudo='sudo -E '
+    echo -e "\e[1;32m[✔] Terminal proxy routing enabled (127.0.0.1:7897) sudo -E enabled\e[0m"
 }
 
 proxy_off() {
     unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY all_proxy ALL_PROXY
-    echo -e "\e[1;31m[✘] Terminal proxy routing disabled\e[0m"
+    unalias sudo 2>/dev/null
+    echo -e "\e[1;31m[✘] Terminal proxy routing disabled. sudo -E disabled\e[0m"
 }
 
 # Optional status check shortcut
@@ -56,5 +58,6 @@ proxy_status() {
     echo "all_proxy   = $all_proxy"
 }
 EOF
+
 
 ```
