@@ -1,7 +1,8 @@
 # VPN_Proxy_Routing on Fedora 44 Konsole
 # Terminal Alias for proxy ON & OFF
 
-how to use:
+**how to use:**
+
 in terminal type `proxy_on` will result in
 ```bash
 
