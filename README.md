@@ -5,7 +5,8 @@ how to use:
 in terminal type `proxy_on` will result in
 ```bash
 
-[✔] Terminal proxy routing enabled (127.0.0.1:7897)
+[✔] Terminal proxy routing enabled (127.0.0.1:7897) sudo -E enabled.
+
 ```
 
 
@@ -17,13 +18,16 @@ Current Proxy Configuration:
 http_proxy  = http://127.0.0.1:7897  
 https_proxy = http://127.0.0.1:7897  
 all_proxy   = socks5h://127.0.0.1:7897
+sudo alias  = active (sudo -E)
+
 ```
 
 
 type `proxy_off` will result in 
 ```bash
 proxy_off  
-[✘] Terminal proxy routing disabled
+[✘] Terminal proxy routing disabled. sudo -E disabled.
+
 ```
 
 
